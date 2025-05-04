@@ -1,0 +1,76 @@
+{% extends 'base/base.html' %}
+
+{% block navbar %}
+{% endblock navbar %}
+
+{% block header %}
+{% endblock header %}
+
+{% block content %}
+
+
+<div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Veterinaria</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pacientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Citas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="text-center">Dashboard Veterinaria</h1>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card text-white bg-success mb-3">
+                    <div class="card-header">Pacientes</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Total: 120</h5>
+                        <p class="card-text">Revisa y administra los pacientes registrados.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-info mb-3">
+                    <div class="card-header">Citas</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Hoy: 15</h5>
+                        <p class="card-text">Consulta las citas programadas para hoy.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-warning mb-3">
+                    <div class="card-header">Servicios</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Activos: 8</h5>
+                        <p class="card-text">Gestiona los servicios ofrecidos por la veterinaria.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock content %}
+
+{% block footer %}
+{% endblock footer %}
